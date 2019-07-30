@@ -1,7 +1,7 @@
-Flask Heroku Sample
+Interpretador de lançamentos contábeis
 ====================
 
-A simple Python Flask example application that's ready to run on Heroku.
+Basta escrever em linguagem natural o lançamento contábil que a aplicação construirá o livro diário, caixa e balanço patrimonial.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
@@ -12,10 +12,6 @@ A simple Python Flask example application that's ready to run on Heroku.
 * `pipenv shell`
 
 * `python app.py`
-
-## Screenshot
-
-![screenshot](https://i.imgur.com/wf74fxY.png)
 
 ## Deploy
 
@@ -29,4 +25,5 @@ A simple Python Flask example application that's ready to run on Heroku.
 
 ## Contributors
 
-* [Yefim](https://twitter.com/yefim)
+* [Renan](https://github.com/avilarenan)
+* [Fabio](https://github.com/)

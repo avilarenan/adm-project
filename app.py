@@ -11,10 +11,13 @@ app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
 db = SQLAlchemy(app)
 
 
-class User(db.Model):
+class Lancamento(db.Model):
   id = db.Column(db.Integer, primary_key=True)
-  name = db.Column(db.String(100))
-  email = db.Column(db.String(100))
+  descricao = db.Column(db.String(100))
+  valor = db.Column(db.String(300))
+  de_onde = db.Column(db.String(100))
+  para_onde = db.Column(db.String(100))
+  ativo_passivo = db.Column(db.String(100))
 
   def __init__(self, name, email):
     self.name = name
