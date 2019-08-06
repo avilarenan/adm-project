@@ -31,7 +31,7 @@ def index():
 
 @app.route('/user', methods=['POST'])
 def user():
-  u = User(request.form['name'], request.form['email'])
+  u = Lancamento(request.form['name'], request.form['email'])
   db.session.add(u)
   db.session.commit()
   return redirect(url_for('index'))
