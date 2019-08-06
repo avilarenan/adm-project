@@ -26,11 +26,11 @@ class Lancamento(db.Model):
 
 @app.route('/', methods=['GET'])
 def index():
-  return render_template('index.html', users=User.query.all())
+  return render_template('index.html', lancamentos=Lancamento.query.all())
 
 
-@app.route('/user', methods=['POST'])
-def user():
+@app.route('/lancamento', methods=['POST'])
+def lancamento():
   u = Lancamento(request.form['name'], request.form['email'])
   db.session.add(u)
   db.session.commit()
