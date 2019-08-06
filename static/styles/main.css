@@ -22,7 +22,7 @@ main {
   margin: 0 auto;
   max-width: 100%;
   padding: 20px;
-  width: 1200px;
+  width: 1600px;
 }
 
 label,
@@ -38,7 +38,7 @@ form {
   border: 1px solid #444;
   max-width: 100%;
   padding: 20px;
-  width: 400px;
+  width: 1000px;
 }
 
 button {
@@ -51,6 +51,6 @@ button {
 }
 
 button:hover {
-  background: #444;
+  background: rgb(79, 119, 68);
   color: #fff;
 }

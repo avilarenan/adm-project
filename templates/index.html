@@ -2,14 +2,14 @@
 
 {% block body %}
   <h1>Lançamento contábil</h1>
-  <form action="{{ url_for('user') }}" method="post">
+  <form action="{{ url_for('lancamento') }}" method="post">
     <label for="lancamento">Lançamento</label>
     <input id="lancamento" type="text" name="lancamento" placeholder="Compra de 5 Kg de mussarela no valor de 100 Reais por Quilo, 50% à vista e o resto parcelado em 3 vezes" required />
     <button type="submit">Lançar</button>
   </form>
   <h2>Lista de lançamentos</h2>
   {% for l in lancamentos %}
-    <p>{{ l.descricao }} -- {{ l.valor }} {{ l.ativo_passivo }} do {{ l.de_onde }} para {{l.para_onde}}</p>
+    <p>{{ l.descricao }} -> {{ l.valor }} {{ l.ativo_passivo }} do {{ l.de_onde }} para {{l.para_onde}}</p>
   {% else %}
     <p>Sem lançamentos ainda. Você pode fazer algum acima.</p>
   {% endfor %}
