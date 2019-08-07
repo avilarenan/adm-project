@@ -54,6 +54,8 @@ def value_identifier(sentence):
   #Identifica o valor na sentenca, retorna o valor
   value_indicators = ['reais', 'real', 'RS$', '$', 'US$', 'dólar', 'dolar', 'dólares', 'dolares',]
 
+  sentence = 'dummy ' + sentence + ' dummy' # for not running out of index
+
   sentence = sentence.split()
   
   matches = [element in sentence for element in value_indicators]
