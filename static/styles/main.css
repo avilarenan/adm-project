@@ -38,7 +38,7 @@ form {
   border: 1px solid #444;
   max-width: 100%;
   padding: 20px;
-  width: 1000px;
+  width: 60%;
 }
 
 button {
@@ -53,4 +53,20 @@ button {
 button:hover {
   background: rgb(79, 119, 68);
   color: #fff;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }

@@ -7,10 +7,35 @@
     <input id="lancamento" type="text" name="lancamento" placeholder="Compra de 5 Kg de mussarela no valor de 100 Reais por Quilo, 50% à vista e o resto parcelado em 3 vezes" required />
     <button type="submit">Lançar</button>
   </form>
-  <h2>Lista de lançamentos</h2>
+
+  <table>
+    <tr>
+      <th>Descrição</th>
+      <th>Valor</th>
+      <th>Ativo/Passivo</th>
+      <th>Origem</th>
+      <th>Destino</th>
+    </tr>
+    {% for l in lancamentos %}
+    <tr>
+      <td>{{ l.descricao }}</td>
+      <td>{{ l.valor }}</td>
+      <td>{{ l.ativo_passivo }}</td>
+      <td>{{ l.de_onde }}</td>
+      <td>{{l.para_onde}}</td>
+    </tr>
+    {% else %}
+    <br>
+    {% endfor %}
+  </table>
+
+  <br>
+  <h2>Interpretação de lançamentos de lançamentos</h2>
   {% for l in lancamentos %}
     <p>{{ l.descricao }} -> {{ l.valor }} {{ l.ativo_passivo }} do {{ l.de_onde }} para {{l.para_onde}}</p>
   {% else %}
     <p>Sem lançamentos ainda. Você pode fazer algum acima.</p>
   {% endfor %}
+  <br>
+
 {% endblock %}
