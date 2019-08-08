@@ -105,9 +105,9 @@ def ativo_passivo_identifier(sentence):
     unit_right_adjacent_word = sentence[unit_value_index+1]
     
     if number_pattern.match(unit_left_adjacent_word):
-        return unit_left_adjacent_word
+        return "passivo " + unit_left_adjacent_word
     elif number_pattern.match(unit_right_adjacent_word):
-        return unit_right_adjacent_word
+        return "passivo " + unit_right_adjacent_word
     else:
         return False
 
